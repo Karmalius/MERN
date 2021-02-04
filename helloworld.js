@@ -8,6 +8,6 @@ http.createServer(function (request, response) {
     }
 
 
-    response.end(". Toimii!");
+    response.end(". OMG se toimii!");
   })
   .listen(8081);
