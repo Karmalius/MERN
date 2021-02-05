@@ -15,13 +15,12 @@ var data = fs.readFile('example.txt',
   }
   console.log('Luettu tiedosto:')
   console.log(data.toString())
-})
+});
 
 var secondData = fs.readFile('example2.txt', 
-
   function (err, secondData) {
     if (err) {
       console.log('Tapahtui virhe!')
   }
   console.log(secondData.toString())
-})
+});
