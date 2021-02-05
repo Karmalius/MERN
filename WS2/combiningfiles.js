@@ -2,25 +2,27 @@
 
 var fs = require("fs");
 
-// Luodaan uusi tiedosto
-fs.writeFile('uusiFile.txt', "Tässä uuden tiedoston sisältö");
-
 // Luetaan data kahdesta muusta tiedostosta ja tallennetaan muuttujiin??
-fs.readFile('example.txt', 
+var data = fs.readFile('example.txt', 
   function (err, data) {
     if (err) {
       console.log('Tapahtui virhe!')
   }
-  var data = data.toString();
+  console.log(data.toString());
 })
 
-fs.readFile('example2.txt', 
+var secondData = fs.readFile('example2.txt', 
   function (err, secondData) {
     if (err) {
       console.log('Tapahtui virhe!')
   }
-  var secondData = secondData.toString();
+  console.log(secondData.toString());
 })
 
-// Lisätään toisten tiedostojen sisältö uuteen tiedostoon ??
-fs.appendFile('uusiFile.txt' + data + secondData);
+// Lisätään toisten tiedostojen sisältö uuteen tiedostoon (joka luodaan samalla).
+// Mutta miten ???
+
+fs.appendFile('uusiFile.txt', "data" , (err) => {
+  if (err) throw err;
+    console.log("Koodi toimii");
+  });
