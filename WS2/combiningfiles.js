@@ -4,6 +4,7 @@ var fs = require("fs");
 
 fs.writeFile('uusiFile.txt', "Tässä uuden tiedoston sisältö");
 
+//??
 fs.readFile('example.txt', 
   function (err, data) {
     if (err) {
@@ -12,6 +13,7 @@ fs.readFile('example.txt',
   var data = data.toString();
 })
 
+//??
 fs.readFile('example2.txt', 
   function (err, secondData) {
     if (err) {
@@ -20,6 +22,5 @@ fs.readFile('example2.txt',
   var secondData = secondData.toString();
 })
 
+//??
 fs.appendFile('uusiFile.txt' + data + secondData);
-
-// ????
