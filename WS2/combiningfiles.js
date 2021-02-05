@@ -23,7 +23,7 @@ var secondData = fs.readFile('example2.txt',
 // Lisätään toisten tiedostojen sisältö uuteen tiedostoon (joka luodaan samalla).
 // Miten saadaan luettu data lisättyä?
 
-fs.appendFile('uusiFile.txt', "data" , (err) => {
+fs.writeFile('uusiFile.txt', "data" , (err) => {
   if (err) throw err;
     console.log("Koodi toimii");
   });
