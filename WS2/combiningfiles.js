@@ -1,10 +1,11 @@
-// Asynkronisesti luodaan tiedosto ja lisätään sinne toisista tiedostoista luetut tekstit?
+// Asynkronisesti luodaan tiedosto ja lisätään sinne toisista tiedostoista luetut tekstit
 
 var fs = require("fs");
 
+// Luodaan uusi tiedosto
 fs.writeFile('uusiFile.txt', "Tässä uuden tiedoston sisältö");
 
-//??
+// Luetaan data kahdesta muusta tiedostosta ja tallennetaan muuttujiin??
 fs.readFile('example.txt', 
   function (err, data) {
     if (err) {
@@ -13,7 +14,6 @@ fs.readFile('example.txt',
   var data = data.toString();
 })
 
-//??
 fs.readFile('example2.txt', 
   function (err, secondData) {
     if (err) {
@@ -22,5 +22,5 @@ fs.readFile('example2.txt',
   var secondData = secondData.toString();
 })
 
-//??
+// Lisätään toisten tiedostojen sisältö uuteen tiedostoon ??
 fs.appendFile('uusiFile.txt' + data + secondData);
