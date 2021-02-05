@@ -2,7 +2,8 @@
 
 var fs = require("fs");
 
-// Luetaan data kahdesta muusta tiedostosta ja tallennetaan muuttujiin??
+// Luetaan data kahdesta muusta tiedostosta ja tallennetaan muuttujiin
+// Miten saa tallennettua oikeaan muotoon?
 var data = fs.readFile('example.txt', 
   function (err, data) {
     if (err) {
@@ -20,7 +21,7 @@ var secondData = fs.readFile('example2.txt',
 })
 
 // Lisätään toisten tiedostojen sisältö uuteen tiedostoon (joka luodaan samalla).
-// Mutta miten ???
+// Miten saadaan luettu data lisättyä?
 
 fs.appendFile('uusiFile.txt', "data" , (err) => {
   if (err) throw err;
