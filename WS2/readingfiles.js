@@ -1,11 +1,11 @@
-// Synkronisesti
+// Synkronisesti:
 //var data = fs.readFileSync("example.txt");
 //var secondData = fs.readFileSync("example2.txt");
 
 //console.log("Luettu tiedostoista:");
 //console.log(data.toString() + " ja " + secondData.toString());
 
-// Ja asynkronisesti
+// Ja asynkronisesti:
 var fs = require('fs')
 
 var data = fs.readFile('example.txt', 
