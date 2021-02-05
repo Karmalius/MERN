@@ -27,3 +27,5 @@ fs.writeFile('uusiFile.txt', "data" , (err) => {
   if (err) throw err;
     console.log("Koodi toimii");
   });
+
+// Lisätään uutta sisältöä tiedostoon
