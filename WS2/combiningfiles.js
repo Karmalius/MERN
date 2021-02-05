@@ -1,4 +1,4 @@
-// Asynkronisesti luodaan tiedosto ja lisätään sinne toisista tiedostoista luetut tekstit
+// Asynkronisesti luodaan tiedosto ja lisätään sinne toisista tiedostoista luetut tekstit?
 
 var fs = require("fs");
 
