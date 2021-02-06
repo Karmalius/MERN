@@ -1,9 +1,11 @@
-// Asynkronisesti luodaan tiedosto ja lisätään sinne toisista tiedostoista luetut tekstit
+// 3.	Writing files is just as easy. It is done using the fs.writeFile –function. 
+// Create a file “combiningfiles.js” and utilize writeFile –function to it, 
+// so that it will write the text files of two files into a single new file. 
+// See the syntax and how to use writeFile from Node.js API.
+
 
 var fs = require("fs");
 
-// Luetaan data kahdesta muusta tiedostosta ja tallennetaan muuttujiin
-// Miten saa tallennettua oikeaan muotoon?
 var data = fs.readFile('example.txt', 
   function (err, data) {
     if (err) {
@@ -20,12 +22,12 @@ var secondData = fs.readFile('example2.txt',
   console.log(secondData.toString());
 })
 
-// Lisätään toisten tiedostojen sisältö uuteen tiedostoon (joka luodaan samalla).
-// Miten saadaan luettu data lisättyä?
 
 fs.writeFile('uusiFile.txt', "data" , (err) => {
   if (err) throw err;
     console.log("Koodi toimii");
   });
 
-// Lisätään uutta sisältöä tiedostoon
+
+// When this works, try adding the string “I wrote this!” at the top and the bottom of the new textfile. 
+// Hint: see API for “append” related file functions.
