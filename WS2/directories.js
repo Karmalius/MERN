@@ -1,3 +1,6 @@
+// 7.	Create program “directories.js” Try mkdir and rmdir; when writing the files in step 3 
+// first create a new folder called “newdata” and then write the file there.
+
 var fs = require('fs'); 
 var path = require('path'); 
    

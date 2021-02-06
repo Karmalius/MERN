@@ -1,11 +1,7 @@
-// Synkronisesti:
-//var data = fs.readFileSync("example.txt");
-//var secondData = fs.readFileSync("example2.txt");
+// 1.	In the teachers presentation, you were shown how to read a text file and display the contents on console. 
+//Try this on your own, create a program “readingfiles.js” that will read one text file display the contents contents on the console. 
+// 2.	Modify the program so, that it will read two textfiles, and output both on the console.
 
-//console.log("Luettu tiedostoista:");
-//console.log(data.toString() + " ja " + secondData.toString());
-
-// Ja asynkronisesti:
 var fs = require('fs')
 
 var data = fs.readFile('example.txt', 
