@@ -4,30 +4,19 @@
 // See the syntax and how to use writeFile from Node.js API.
 
 
-var fs = require("fs");
+let fs = require("fs");
 
-var data = fs.readFile('example.txt', 
-  function (err, data) {
-    if (err) {
-      console.log('Tapahtui virhe!')
-  }
-  console.log(data.toString());
-})
-
-var secondData = fs.readFile('example2.txt', 
-  function (err, secondData) {
-    if (err) {
-      console.log('Tapahtui virhe!')
-  }
-  console.log(secondData.toString());
-})
+let data = fs.readFileSync('example.txt');
+let secondData = fs.readFileSync('example2.txt');
+let newData = data + "\n" + secondData;
 
 
-fs.writeFile('uusiFile.txt', "data" , (err) => {
-  if (err) throw err;
-    console.log("Koodi toimii");
-  });
+fs.writeFileSync('uusiFile.txt', newData);
 
 
 // When this works, try adding the string “I wrote this!” at the top and the bottom of the new textfile. 
 // Hint: see API for “append” related file functions.
+
+fs.appendFileSync("uusiFile.txt","\nI wrote this");
+
+// Miten saa tiedoston alkuun tekstiä??
