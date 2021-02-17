@@ -1,4 +1,5 @@
 const request = require("request");
+const PORT = process.env.PORT || 5000;
 var http = require("http");
 var data;
 
@@ -26,4 +27,4 @@ http.createServer(function (request, response) {
 
     response.end();
   })
-  .listen(8081);
+  .listen(PORT);

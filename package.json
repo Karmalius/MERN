@@ -9,7 +9,8 @@
   "scripts": {
     "start": "node index.js",
     "test": "node test.js"
+  },
+  "dependencies": {
+    "request": "^2.88.2"
   }
-
-
 }
