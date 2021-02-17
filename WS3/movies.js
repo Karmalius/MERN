@@ -16,7 +16,7 @@ request("http://www.omdbapi.com/?t=harry+potter&apikey=3d3574c1",
 http.createServer(function (request, response) {
     response.writeHead(200, { "Content-Type": "text/html" });
 
-    response.write("<table border=1>");
+    response.write("<table border='1'>");
     response.write("<tr><td>Name: " + data.Title + "</td></tr>");
     response.write("<tr><td>Year: " + data.Year + "</td></tr>");
     response.write("<tr><td>Genre: " + data.Genre + "</td></tr>");
