@@ -18,7 +18,7 @@ app.locals.pretty = true;
 app.get("/", function(req, res) {
     res.render("pages/index", {
       new_heading: "Workshop 5",
-      new_paragraph: "This is my WS5 practise.",
+      new_paragraph: "This is my WS5 practise",
     });
   })
 
